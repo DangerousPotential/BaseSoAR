@@ -19,3 +19,10 @@ In this guide, you are assumed to have basic Python knowledge and have installed
 * Create a file named `secrets.toml` in the `.streamlit` folder
 * Generate an OpenAI API Key and create a field `OPENAI_API_KEY = "(paste your API key here without the brackets)`
 
+## Using BaseSoAR
+* `BaseSoAR.py` is the main page where user will load into (feel free to adjust the title name and contents in the page)
+* `./pages/*.py`: All Python files in the `pages` folder will be a single page accessible in the sidebar (the name of the `.py` file represents the name of the page)
+    * For this page, you can refer to `Chapter 1.py` to see how buttons can be created and how information can be presented with the click of the button
+    * How to initialise a temporary list to store conversation history
+    * How to spawn the chat bot interface
+* `./images/chapterno/*.png`: All images file would be stored in their sub-folder located in the images directory (e.g. chapter 1 images are stored in `./images/chapter1/test.png`)
