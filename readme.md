@@ -26,3 +26,4 @@ In this guide, you are assumed to have basic Python knowledge and have installed
     * How to initialise a temporary list to store conversation history
     * How to spawn the chat bot interface
 * `./images/chapterno/*.png`: All images file would be stored in their sub-folder located in the images directory (e.g. chapter 1 images are stored in `./images/chapter1/test.png`)
+* `./documents/(pdf file)`: All documents that you need to connect to the LLM should be loacted in the documents folder (e.g. chapter 1 document is stored in `./documents/chapter1.pdf`)
