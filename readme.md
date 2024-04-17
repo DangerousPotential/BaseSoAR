@@ -27,3 +27,8 @@ In this guide, you are assumed to have basic Python knowledge and have installed
     * How to spawn the chat bot interface
 * `./images/chapterno/*.png`: All images file would be stored in their sub-folder located in the images directory (e.g. chapter 1 images are stored in `./images/chapter1/test.png`)
 * `./documents/(pdf file)`: All documents that you need to connect to the LLM should be loacted in the documents folder (e.g. chapter 1 document is stored in `./documents/chapter1.pdf`)
+## Document Usage
+* `RAG*.py`: To connect the files to the LLM, you can reuse the code from `RAGChapter1.py` changing only the document path file in line 20
+* **Example**: If I have another file for Chapter 2, I will copy and paste the file `RAGChapter1.py` and rename it to `RAGChapter2.py` and change the pdf file path in RAGChapter2.py to `./documents/chapter2.pdf`.
+    * I will then go over to `./pages/Chapter 2.py` and import the `answer` function from `RAGChapter2.py` by adding an import statement like this ```python from RAGChapter2 import answer```
+
