@@ -30,5 +30,5 @@ In this guide, you are assumed to have basic Python knowledge and have installed
 ## Document Usage
 * `RAG*.py`: To connect the files to the LLM, you can reuse the code from `RAGChapter1.py` changing only the document path file in line 20
 * **Example**: If I have another file for Chapter 2, I will copy and paste the file `RAGChapter1.py` and rename it to `RAGChapter2.py` and change the pdf file path in RAGChapter2.py to `./documents/chapter2.pdf`.
-    * I will then go over to `./pages/Chapter 2.py` and import the `answer` function from `RAGChapter2.py` by adding an import statement like this ```python from RAGChapter2 import answer```
+    * I will then go over to `./pages/Chapter 2.py` and import the `answer` function from `RAGChapter2.py` by adding an import statement like this ```from RAGChapter2 import answer```
 
