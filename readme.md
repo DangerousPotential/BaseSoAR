@@ -14,4 +14,8 @@ In this guide, you are assumed to have basic Python knowledge and have installed
 * At the bottom right of Visual Studio code, you should see that a new environment is found as a pop up and click "Yes"
 * Kill the terminal by clicking the trash icon logo
 * Rerun `BaseSoAR.py`
-* Install all the dependencies by using `pip install -r requirements.txt`
+* Install all the dependencies by using `pip install -r requirements.txt` in the terminal
+* Create a folder called `.streamlit` in the current folder (where `BaseSoAR.py` is located in)
+* Create a file named `secrets.toml` in the `.streamlit` folder
+* Generate an OpenAI API Key and create a field `OPENAI_API_KEY = "(paste your API key here without the brackets)`
+
