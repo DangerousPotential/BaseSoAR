@@ -1,6 +1,6 @@
 import streamlit as st
 from PIL import Image
-from RAGChapter1 import answer
+from RAGStreamlitBasics import answer
 if 'username' not in st.session_state:
     st.session_state['username'] = None
 if st.session_state['username'] is None:
@@ -8,7 +8,7 @@ if st.session_state['username'] is None:
     st.stop()
 else:
     # Each Python file in the pages folder represents a chapter
-    st.title(":rainbow[PyCon]")
+    st.title(":rainbow[Streamlit Basics]")
     # Create a row with 3 columns to evenly space the buttons
     col1, col2, col3 = st.columns(3)
     # Inside each of the column you can choose how many buttons you want to add
@@ -20,12 +20,19 @@ else:
         b3 = st.button("Button 3")
     # To show different content when each button is pressed:
     if b1:
-        st.write("We are writing here from PyCon")
+        st.write("We are writing here from PyCon Chapter 2")
         python_logo = Image.open("./images/Chapter1/python.png")
     if b2:
-        st.write("**Button 2 is pressed**")
+        st.write("**We are writing from PyCon Chapter 3**")
     if b3:
-        st.write("**Button 3 is pressed**")
+        st.write("**We are writing from PyCon Chaper 4**")
+        st.markdown("**How to write Python Functions**")
+        st.markdown("""
+```python
+def add(x,y):
+    return x + y 
+```       
+""")
     # Adding the chatbot functionality
     st.divider()
     # Create a temporary list to store messages until user refresh
