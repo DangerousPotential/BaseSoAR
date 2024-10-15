@@ -35,7 +35,7 @@ def on_signup(email,password):
             st.warning("Ensure that you are using your school email!")
     except:
         st.warning("You have signed up before. Contact ICT department for help!")
-
+# Render the Sign Up Page for users which is not logged in.
 if st.session_state['username'] is None:
     email = st.text_input("Email for Sign Up: ")
     password = st.text_input("Set a Password: ", type="password", key = 'gui')
