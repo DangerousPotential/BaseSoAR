@@ -7,13 +7,14 @@ BaseSoAR allows you to build a quick web-app to help your students learn more ef
 
 In this guide, you are assumed to have basic Python knowledge and have installed Python and Visual Studio Code in your computer.
 
-* Clone the repo in a folder
-* Open the folder in Visual Studio Code
+* Clone the repo in a folder using `git clone https://github.com/DangerousPotential/BaseSoAR.git`
+* Open the cloned folder in Visual Studio Code (File -> Open Folder)
 * Run the file `BaseSoAR.py` to start a terminal (you can ignore any errors for now)
-* In the terminal below, create a virtual environment using `python -m venv .venv` on Windows and `python3 -m venv .venv` on Mac OS
+* In the terminal below, create a virtual environment using `python -m venv .venv` on Windows and `python3 -m venv .venv` on Mac OS / Chromebook
 * At the bottom right of Visual Studio code, you should see that a new environment is found as a pop up and click "Yes"
+    * Alternatively, you can hold `Ctrl + Shift + P` and type in `Python: Select Interpeter` and choose the environment with the `.venv` name
 * Kill the terminal by clicking the trash icon logo
-* Rerun `BaseSoAR.py`
+* Rerun `BaseSoAR.py` and expect an error
 * Install all the dependencies by using `pip install -r requirements.txt` in the terminal
 * Create a folder called `.streamlit` in the current folder (where `BaseSoAR.py` is located in)
 * Create a file named `secrets.toml` in the `.streamlit` folder
